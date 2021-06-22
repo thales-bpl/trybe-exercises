@@ -1,10 +1,18 @@
-section{
+article{
     width: 70%;
 }
+
+section{
+    
+}
 .imagem1{
-    ;
+    
 }
 
 table {
+    display: inline;
+}
+
+nav {
     
 }
