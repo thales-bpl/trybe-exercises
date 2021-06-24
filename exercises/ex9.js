@@ -6,7 +6,7 @@ for (let index = 1; index <= 25; index += 1) {
 
 let arrayDiv2 = []
 
-for (let indexD = 0; indexD < 25; indexD += 1) {
+for (let indexD = 0; indexD < array.length; indexD += 1) {
     arrayDiv2.push(array[indexD]/2)
 }
 
