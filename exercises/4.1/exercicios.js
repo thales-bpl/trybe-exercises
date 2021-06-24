@@ -1,5 +1,4 @@
 // Exercício 1
-
 let a = Number
 let b = Number
 a= 31
@@ -39,7 +38,6 @@ if (n1>n2) {
 let m1 = Number
 let m2 = Number
 let m3 = Number
-
 m1=14
 m2=8
 m3=9
@@ -92,7 +90,8 @@ else {
 
 // Exercício 6
 // Insira o nome da peça na linha abaixo:
-let chessp = "Bispo"
+let chessp = String
+chessp = "Bispo"
 let lowchessp = chessp.toLowerCase()
 
 switch (lowchessp) {
@@ -117,6 +116,7 @@ switch (lowchessp) {
     default:
         console.log('erro')
 }  
+
 
 // Exercício 7
 let nota = Number
@@ -163,10 +163,13 @@ if (nota >= 90 && nota <= 100) {
 
 
 // Exercício 8
-let p1 = 3
-let p2 = 4
-let p3 = 7
+let p1 = Number
+let p2 = Number
+let p3 = Number
 let ppp = Boolean
+p1 = 3
+p2 = 4
+p3 = 7
 
 let pp1 = p1 % 2
 let pp2 = p2 % 2
@@ -181,21 +184,24 @@ console.log(ppp)
 
 
 // Exercício 9
-let k1 = 2
-let k2 = 5
-let k3 = 6
-let kkk = Boolean
+let q1 = Number
+let q2 = Number
+let q3 = Number
+let qqq = Boolean
+q1 = 2
+q2 = 5
+q3 = 6
 
-let kk1 = k1 % 2
-let kk2 = k2 % 2
-let kk3 = k3 % 2
+let qq1 = q1 % 2
+let qq2 = q2 % 2
+let qq3 = q3 % 2
 
-if (kk1 !== 0 || kk2 !== 0 || kk3 !== 0) {
-    kkk = true
+if (qq1 !== 0 || qq2 !== 0 || qq3 !== 0) {
+    qqq = true
 } else {
-    kkk = false
+    qqq = false
 }
-console.log(kkk)
+console.log(qqq)
 
 
 // Exercício 10
@@ -217,9 +223,8 @@ if (vv > 0 || cp > 0) {
 // Exercício 11
 let salarioBruto = Number
 salarioBruto = 3000
-
-
 let aliquotaINSS = Number
+
 if (salarioBruto < 1556.94) {
     aliquotaINSS = salarioBruto * 0.08
 } else if (salarioBruto >= 1556.94 && salarioBruto < 2594.92) {
