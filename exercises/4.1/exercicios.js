@@ -75,7 +75,7 @@ t3=60
 
 if (t1 < 0 || t2 < 0 || t3 < 0) {
     tcheck = false;
-} else if (t1+t2+t3 == 180) {
+} else if (t1 + t2 + t3 == 180) {
     tcheck = true;
 } else {
     tcheck = false;
@@ -207,11 +207,13 @@ console.log(qqq)
 // Exercício 10
 let cp = Number
 let vv = Number
+let imposto = Number
+imposto = 0.2
 cp = 20
 vv = 80
-let ct = cp + cp*(0.2)
+let ct = cp + cp * (imposto)
 let lucro = vv - ct
-let lucroTotal = lucro*1000
+let lucroTotal = lucro * 1000
 
 if (vv > 0 || cp > 0) {
     console.log(lucroTotal)
