@@ -3,8 +3,8 @@ let meio = (n + 1) / 2;
 
 for (let altura = 0; altura < meio; altura += 1) {
     let resultado = '';
-    for (let posicaoNaLinha = 1; posicaoNaLinha <= n; posicaoNaLinha += 1) {
-        if (posicaoNaLinha === (meio + altura) || posicaoNaLinha === (meio - altura) || altura === (meio - 1)) {
+    for (let posLinha = 1; posLinha <= n; posLinha += 1) {
+        if (posLinha === (meio + altura) || posLinha === (meio - altura) || altura === (meio - 1)) {
             resultado += '*';
         } else {
             resultado += ' ';
