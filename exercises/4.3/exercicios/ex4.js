@@ -7,10 +7,10 @@ A partir daí podemos notar que em cada andar subsequente, devemos desenhar mais
 let n = 5
 let alturaMax = ( n + 1 ) / 2;
 
-for (let altura = 0; altura < alturaMax; altura += 1) {
+for (let indexAltura = 0; indexAltura < alturaMax; indexAltura += 1) {
     let resultado = '';
     for (let posLinha = 1; posLinha <= n; posLinha += 1) {
-        if (posLinha <= (alturaMax + altura) && posLinha >= (alturaMax - altura)) {
+        if (posLinha <= (alturaMax + indexAltura) && posLinha >= (alturaMax - indexAltura)) {
             resultado += '*';
         } else {
             resultado += ' ';
