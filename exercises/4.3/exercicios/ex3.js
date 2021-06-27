@@ -1,16 +1,12 @@
-let n = Number
-n = 5;
+let n = 5;
+let asterisco = '';
+let vazio = '';
 
 for (let index = 1; index <= n; index += 1) {
-    let line = '';
-    let asterisco = n - index;
-
-    for (let Index2 = 0; Index2 < n; Index2 += 1) {
-        if (line.length < asterisco) {
-            line += ' ';
-        } else {
-            line += '*';
-        }
-    }
-console.log(line);
+    asterisco += '*';
+    for (let index2 = n - index; index2 > 0; index2 -= 1) {
+        vazio += ' ';
+    } 
+    console.log(vazio + asterisco);
+    vazio = '';
 }
