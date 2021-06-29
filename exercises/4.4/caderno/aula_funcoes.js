@@ -1,4 +1,4 @@
-function greet(name, age ) {
+function greet(name, age) {
     console.log('O/A ' + name + ' possui ' + age + ' anos.')
 }
 greet ('Ana', 25)
