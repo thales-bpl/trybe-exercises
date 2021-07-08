@@ -62,7 +62,15 @@
         titlePage.innerText = 'Exercício 5.2 - JavaScript DOM';
         corpo.appendChild(titlePage);
         
+        const divPrincipal = document.createElement('div');
+        /* divPrincipal.setAttribute = 'main-content' */
+        divPrincipal.classList.add('main-content');
+        corpo.appendChild(divPrincipal);       
 
+        const divCenter = document.createElement('div');
+        divCenter.classList.add('center-content');
+        divPrincipal.appendChild(divCenter);
+        
 
     </script>
   </body>
