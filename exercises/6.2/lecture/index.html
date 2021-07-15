@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel='stylesheet' href='style.css'> -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class='container text-cernter'>
+        <h1 class="display-1">Submeter palestra</h1>
+        <p><em>Quer palestrar na nossa conferência? Preencha o formulário</em></p>
+    </header>
+
+    <hr>
+    <!-- FORMULARIO -->
+    <form action='' method='GET' class=''>
+        <!-- NOME -->
+        <div class= ''>
+            <label for='full-name' class="form-label">Nome</label>
+            <input type="text" name="full-name" id="full-name">
+        </div>
+
+        <!-- TIPO DA PALESTRA -->
+        <!-- Workshop ou Palco Principal-->
+        <div class=''>
+            <fieldset class='fieldset-talk-type'>
+                <label for='talk-type-workshop' class="form-label">Workshop</label>
+                <input type='radio' name='talks' id='talk-type-workshop' value='talk-type-workshop'>
+                <label for='talk-type-main-stage' class="form-label">Palco Principal</label>
+                <input type='radio' name='talks' id='talk-type-main-stage' value='talk-type-main-stage'>
+            </fieldset>
+        </div>
+        
+        <!-- INFORMAÇÕES DA CAMISA -->
+        <div class=''>
+            <label for='t-shirt-select' class="form-label">Tamanho da camisa</label>
+            <select name='t-shirt' id='t-shirt-select'>
+                <option value='p'>Pequena</option>
+                <option value='m'>Média</option>
+                <option value='g'>Grande</option>
+                <option value='gg'>Extra Grande</option>
+            </select>
+        </div>
+
+        <!-- DESCRIÇÃO DA MINHA PALESTRA -->
+        <div class=''>
+            <label for ='abstract' class="form-label">Descrição da palestra</label>
+            <textarea name='abstract' id='abstract' class='abstract-style'></textarea>
+        </div>
+
+        <!-- DISPONIBILIDADE NAQUELA DATA -->
+        <div class=''>
+            <label for='availability' class="form-label">Estou disponível nessa data!</label>
+            <input type='checkbox' name='availability' id='availability'>
+        </div>
+
+        <!-- BOTÃO -->
+        <input type='button' value='Enviar'>
+        <button>Enviar</button>
+
+    </form>
+    
+</body>
+</html>
