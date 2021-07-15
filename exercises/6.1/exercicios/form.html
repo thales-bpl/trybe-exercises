@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+  <h1>Formulário de Currículos</h1>
+  <form action='' method="GET" enctype="multipart/form-data">
+    <fieldset>
+      <label for='full-name'>Nome:</label>
+      <input type='text' name="name" id='full-name' maxlength="40" required>
+      <label for='usermail'>E-mail:</label>
+      <input type='email' name='email' id='usermail' maxlength="50" required>
+      <label for='user-cpf'>CPF:</label>
+      <input type='number' name='usercpf' id='user-cpf' maxlength="11" required>
+      <label for='user-address'>Endereço:</label>
+      <input type="text" name='useradress' id='user-address' maxlength="200" required>
+      <label for='input-estado'>Selecione seu estado:</label>
+      <select name='estado' id='input-estado'></select>
+    </fieldset>
+  </form>
+  
+  <script src="script.js"></script>
+</body>
+</html>
