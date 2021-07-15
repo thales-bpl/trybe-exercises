@@ -1,4 +1,4 @@
-const boxEstados = document.querySelector('#input-estado')
+const boxStates = document.querySelector('#input-state') // elemento <select> que recebe options dos estados
 
 const estados = {
   AC: 'Acre',
@@ -30,6 +30,14 @@ const estados = {
   TO: 'Tocantins',
 };
 
-for (let index of estados) {
-  console.log(index)
+for (let index in estados) {
+  let stateOption = document.createElement('option')
+  stateOption.innerText = estados[index];
+  stateOption.value = index;
+  boxStates.appendChild(stateOption);
 }
+
+const jobStart = document.querySelector('#job-initial-date') //input que recebe data de início do emprego
+/* for (let index = 0; index < jobStart.innerText.length; index += 1) {
+
+} */
