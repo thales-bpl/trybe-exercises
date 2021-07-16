@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      .menu {
+        background-color: #5995da;
+        color: white;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .links {
+        display: flex;
+        /* width: 10%;
+        justify-content: space-between;
+        border: 1px solid red; */
+      }
+
+      .login {
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+
+      .header {
+        display:flex;
+        background-color: white;
+        height: 300px;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(66, 173, 206);
+      }
+
+      .blocks {
+        display: flex;
+        /* flex-wrap: wrap;
+        flex-direction: row; */
+        flex-flow: row wrap; /* Essa propriedade substitui as duas acima */
+        flex-wrap: wrap;
+        /* align-items: center; */
+        align-content: center;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <nav class='menu'>
+      <div class='date'>Fri 16, 2021</div>
+      <div class='links'>
+        <div class='signup'>Sing up</div>
+        <div class='login'>Login</div>
+      </div>    
+    </nav>
+
+    <header class='header'>
+      <span>Subscribe &#9662</span>
+      <img class='title' src='https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5b75f346453575.58549075156e6.png' alt='imagem logo imaginario' width='230px'>
+      <img class='social' src='https://beyondmerchantcapital.com.au/wp-content/uploads/2019/04/social-media-business.gif' alt='social media images' width='100px' >
+    </header>
+
+    <section class='blocks'>
+      <img src='https://img.pixers.pics/pho_wat(s3:700/FO/10/71/23/65/5/700_FO107123655_2eef2f2604a23758b4de3439c584cdf8.jpg,700,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,650,jpg)/almohadas-largas-elemento-geometrico-ilusion-optica-ilustracion-vectorial-diseno-de-la-linea.jpg.jpg' width="200px">
+      <img src='https://st2.depositphotos.com/3168047/10519/v/950/depositphotos_105199876-stock-illustration-impossible-cube-isolated-on-white.jpg' width="200px">
+      <img src='https://img.pixers.pics/pho_wat(s3:700/FO/11/52/18/18/7/700_FO115218187_2ffa9c18d13a3824d0174956c4a18fa1.jpg,700,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,650,jpg)/posteres-ilusao-de-otica-geometrica-cubos-ilustracao-do-vetor-eps-10-linha-projeto.jpg.jpg' width="200px">
+      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROBES2eRCHBlMKfHS9txZEyZTzVkv1tjUiwDbDmeB-UAA0F1WQ2_Un2mLr9h_QJx0_hxo&usqp=CAU' width="200px">
+      <img src='https://http2.mlstatic.com/D_NQ_NP_905414-MLB27487910331_062018-O.jpg' width="200px">
+    </section>
+    
+  </body>
+</html>
