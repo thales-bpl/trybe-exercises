@@ -37,7 +37,28 @@ for (let index in estados) {
   boxStates.appendChild(stateOption);
 }
 
-const jobStart = document.querySelector('#job-initial-date') //input que recebe data de início do emprego
-/* for (let index = 0; index < jobStart.innerText.length; index += 1) {
+const submitButton = document.querySelector('#submit-button');
+submitButton.addEventListener('click', generateForm)
 
-} */
+function generateForm(evento) {
+  evento.preventDefault();
+  formsContainer();
+  extractValues();
+  // jogar todas as infos numa div
+}
+
+function formsContainer() {
+  let divForms = document.createElement('div');
+  divForms.classList.add('container');
+  document.body.appendChild(divForms);
+}
+
+//função pra pegar todos os elementos do forms:
+function extractValues() {
+let allInputs = document.getElementsByClassName('input');
+  for (let key of allInputs) {
+    let entry = key.value;
+    divForms.innerHTML = entry;
+    divForms.innerText = '<br>'
+  }
+}
