@@ -35,4 +35,3 @@ for (let index = 0; index < parag.length; index += 1) {
 for (let index in parag.length) {
     console.log(document.getElementsByTagName('p')[index].innerText);
 }
-// porque o forloop acima não funiona?? :madface:
