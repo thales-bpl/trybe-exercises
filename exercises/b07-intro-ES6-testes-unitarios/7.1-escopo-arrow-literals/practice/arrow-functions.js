@@ -22,8 +22,7 @@ console.log(sum(2, 2));
 const sum = (num1, num2) => num1 + num2
 console.log(sum(2, 2));
 
-//
-//
+// -------------------- // -------------------- //
 // Let's take a look at another example of the many ways we can write the same function: 
 //Ex 1:
 function wordCounter(phrase) {
@@ -42,8 +41,7 @@ console.log(wordCounter('Fala tribo, beleza?'));
 const wordCounter = phrase => phrase.split(' ').length;
 console.log(wordCounter('Fala tribo, beleza?'));
 
-//
-//
+// -------------------- // -------------------- //
 // Now let's see an example of a function that create an object:
 // Ex 1:
 function objectProfile (name, age) {
@@ -59,8 +57,8 @@ console.log(objectProfile('Joaquim', 25));
 const objectProfile = (name, age) => ({name: name, age: age});
 console.log(objectProfile('Joaquim', 25));
 
-//
-//
+
+// -------------------- // -------------------- //
 // Yet another example:
 // Ex 1:
 const printName = () => {
