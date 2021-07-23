@@ -40,13 +40,14 @@ for (let index in estados) {
 const submitButton = document.querySelector('#submit-button');
 submitButton.addEventListener('click', generateForm)
 
+// jogar todas as infos do forms numa div:
 function generateForm(evento) {
   evento.preventDefault();
   formsContainer();
   extractValues();
-  // jogar todas as infos numa div
 }
 
+// 
 function formsContainer() {
   let divForms = document.createElement('div');
   divForms.classList.add('container');
