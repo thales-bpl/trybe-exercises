@@ -56,3 +56,13 @@ console.log(allLessons);
 console.log(allLessons(lesson1, lesson2, lesson3)); */
 
 // Ex 6:
+const studentCount = (obj) => {
+  let total = 0;
+  let arrayKeys = Object.keys(obj);
+  for (index in arrayKeys) {
+    total += obj[arrayKeys[index]].numeroEstudantes;
+  }
+  return total;
+}
+console.log(studentCount(allLessons));
+
