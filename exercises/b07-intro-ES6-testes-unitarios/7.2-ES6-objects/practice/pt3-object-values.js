@@ -57,15 +57,3 @@ console.log(listSkillsValuesWithFor(student));
 // Com Object.values
 const listSkillsValuesWithValues = (student) => Object.values(student);
 console.log(listSkillsValuesWithValues(student));
-
-
-
-array = [1,2,3,54,12,4]
-
-for (index in array) {
-  console.log(index)
-}
-
-for (index of array) {
-  console.log(index)
-}
