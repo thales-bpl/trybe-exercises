@@ -45,20 +45,20 @@ console.log(`personValues: ${personValues}`);
 
 // Entendendo a diferença entre chamar uma key por ponto ou chaves:
 // Nesse primeiro caso conseguimos atribuir dinamicamente várias chaves:
-const object = {};
+const student = {};
 for (let index = 0; index < 5; index += 1) {
-  object[index] = 'Xablau'
+  student[index] = 'Xablau'
 }
-console.log(object);
-console.table(object);
+console.log(student);
+console.table(student);
 
 // Nesse segundo caso, o JS vai entender que 'index' se trata de uma única key chamada 'index', e por isso teremos apenas um retorno:
 const object = {};
 for (let index = 0; index < 5; index += 1) {
-  object.index = 'Xablau'
+  student.index = 'Xablau'
 }
-console.log(object);
-console.table(object);
+console.log(student);
+console.table(student);
 
 // ---------- // ---------- // ---------- //
 
