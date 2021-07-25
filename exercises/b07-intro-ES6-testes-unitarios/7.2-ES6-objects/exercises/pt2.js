@@ -58,7 +58,7 @@ console.log(allLessons(lesson1, lesson2, lesson3)); */
 // Ex 6:
 const studentCount = (obj) => {
   let total = 0;
-  let arrayKeys = Object.keys(obj);
+  const arrayKeys = Object.keys(obj);
   for (index in arrayKeys) {
     total += obj[arrayKeys[index]].numeroEstudantes;
   }
@@ -66,3 +66,19 @@ const studentCount = (obj) => {
 }
 console.log(studentCount(allLessons));
 
+// Ex 7:
+const getValueByNumber = (obj, index) => {
+  const arrayObj = Object.keys(obj);
+  const target = arrayObj[index];
+  return obj[target];
+}
+console.log(getValueByNumber(lesson1, 0));
+
+// Ex 8:
+const verifyPair = (obj, key, value) => {
+  const objKey = obj[key];
+  const verify = (objKey == value) ? `true` : `false`;
+  return verify;
+}
+console.log(verifyPair(lesson3, 'turno', 'noite'));
+console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
