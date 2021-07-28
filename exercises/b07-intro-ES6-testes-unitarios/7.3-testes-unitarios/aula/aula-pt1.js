@@ -73,3 +73,4 @@ assert.strictEqual(summationOf(3), 6, 'O somatório de 3 deve ser 6');
 assert.strictEqual(summationOf(5), 15, 'O somatório de 5 deve ser 15');
 assert.strictEqual(summationOf(0), 0, 'O somatório de 5 deve ser 0');
 // Dessa forma não teremos erro
+

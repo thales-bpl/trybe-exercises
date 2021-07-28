@@ -54,9 +54,9 @@ function formsContainer() {
   document.body.appendChild(divForms);
 }
 
-//função pra pegar todos os elementos do forms:
+// função pra pegar todos os elementos do forms:
 function extractValues() {
-let allInputs = document.getElementsByClassName('input');
+let allInputs = document.getElementsByClassName('input'); // todos os elementos <input>
   for (let key of allInputs) {
     let entry = key.value;
     divForms.innerHTML = entry;
