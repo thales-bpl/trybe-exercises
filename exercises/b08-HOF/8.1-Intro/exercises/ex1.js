@@ -14,3 +14,4 @@ const newEmployees = (callback) => {
 };
 
 console.log (newEmployees(register));
+
