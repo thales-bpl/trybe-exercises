@@ -45,15 +45,12 @@ const objectValues = (object) => {
 console.log(objectValues(lesson2));
 
 // Ex 5:
-const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+const allLessons = {lesson1, lesson2, lesson3};
 console.log(allLessons);
 
-// Porque o retorno da de cima tá certo e o da de baixo é undef?
-
-/* const allLessons = (obj1, obj2, obj3) => {
-  Object.assign({}, {obj1, obj2, obj3});
-}
-console.log(allLessons(lesson1, lesson2, lesson3)); */
+// resposta alternativa:
+const allLessons = (obj1, obj2, obj3) => Object.assign({}, {obj1, obj2, obj3});
+console.log(allLessons(lesson1, lesson2, lesson3));
 
 // Ex 6:
 const studentCount = (obj) => {
