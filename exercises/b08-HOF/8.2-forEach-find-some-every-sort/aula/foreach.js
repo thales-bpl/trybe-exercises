@@ -2,10 +2,10 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function callbackfn(number, index, array) {
   console.log(`status do número: [${index}] ${number}`);
-  console.log(array)
+  /* console.log(array) */
 }
 
-/* numbers.forEach(callbackfn); */
+numbers.forEach(callbackfn);
 
 numbers.forEach((number, index) => console.log(`status do número: [${index}] ${number}`))
 
