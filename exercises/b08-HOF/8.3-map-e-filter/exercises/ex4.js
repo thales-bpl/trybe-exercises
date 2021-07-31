@@ -1,5 +1,4 @@
 const assert = require('assert');
-const { toNamespacedPath } = require('path/posix');
 
 const books = [
   {
@@ -64,46 +63,38 @@ const books = [
   },
 ];
 
-function nameAndAge() {
+function oldBooksOrdered() {
   return books
-  .map((book) => (
-    {
-      age: book.releaseYear - book.author.birthYear,
-      author: book.author.name
-    }
-  ))
-  .sort((authorA, authorB) => (authorA.age - authorB.age));
+  .filter((book) => book.releaseYear <= 1961)
+  .sort((bookA, bookB) => (bookA.releaseYear - bookB.releaseYear))
 }
 
-console.log(nameAndAge())
+console.log(oldBooksOrdered());
 
 // ----- // ----- //
 
 const expectedResult = [
   {
-    age: 31,
-    author: 'Isaac Asimov',
+    id: 6,
+    name: 'O Chamado de Cthulhu',
+    genre: 'Terror',
+    author: { name: 'H. P. Lovecraft', birthYear: 1890 },
+    releaseYear: 1928,
   },
   {
-    age: 38,
-    author: 'H. P. Lovecraft',
+    id: 3,
+    name: 'Fundação',
+    genre: 'Ficção Científica',
+    author: { name: 'Isaac Asimov', birthYear: 1920 },
+    releaseYear: 1951,
   },
   {
-    age: 39,
-    author: 'Stephen King',
-  },
-  {
-    age: 43,
-    author: 'George R. R. Martin',
-  },
-  {
-    age: 45,
-    author: 'Frank Herbert',
-  },
-  {
-    age: 62,
-    author: 'J. R. R. Tolkien',
+    id: 2,
+    name: 'O Senhor dos Anéis',
+    genre: 'Fantasia',
+    author: { name: 'J. R. R. Tolkien', birthYear: 1892 },
+    releaseYear: 1954,
   },
 ];
 
-assert.deepStrictEqual(nameAndAge(), expectedResult);
+assert.deepStrictEqual(oldBooksOrdered(), expectedResult);

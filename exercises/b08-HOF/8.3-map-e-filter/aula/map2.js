@@ -15,7 +15,7 @@ const cities = [
 
 console.table(cities);
 
-const citiesAndStateCodes = cities.map((city) =>`${city.name} - ${city.state}`);
+const citiesAndStateCodes = cities.map((city) => `${city.name} - ${city.state}`);
 console.table(citiesAndStateCodes)
 
 
