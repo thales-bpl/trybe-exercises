@@ -1,4 +1,5 @@
 const assert = require('assert');
+const { toNamespacedPath } = require('path/posix');
 
 const books = [
   {
@@ -63,20 +64,42 @@ const books = [
   },
 ];
 
-const expectedResult = {
-  author: {
-    birthYear: 1948,
-    name: 'George R. R. Martin',
-  },
-  genre: 'Fantasia',
-  id: 1,
-  name: 'As Crônicas de Gelo e Fogo',
-  releaseYear: 1991,
-};
-
-function getNamedBook() {
-  return books.find((book) => book.name.length === 26);
+function nameAndAge() {
+  return books.map((book) => ({
+    age: book.releaseYear - book.author.birthYear,
+    author: book.author.name
+  })).sort((authorA, authorB) => (authorA.age - authorB.age));
 }
 
-console.log(getNamedBook())
-assert.deepStrictEqual(getNamedBook(), expectedResult);
+console.log(nameAndAge())
+
+// ----- // ----- //
+
+const expectedResult = [
+  {
+    age: 31,
+    author: 'Isaac Asimov',
+  },
+  {
+    age: 38,
+    author: 'H. P. Lovecraft',
+  },
+  {
+    age: 39,
+    author: 'Stephen King',
+  },
+  {
+    age: 43,
+    author: 'George R. R. Martin',
+  },
+  {
+    age: 45,
+    author: 'Frank Herbert',
+  },
+  {
+    age: 62,
+    author: 'J. R. R. Tolkien',
+  },
+];
+
+assert.deepStrictEqual(nameAndAge(), expectedResult);
