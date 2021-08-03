@@ -62,7 +62,7 @@ console.log(damageRoll(axeChop(warrior).min, axeChop(warrior).max, 'Warrior'))
 // Mage turn:
 const spellDamage = (character, spell) => {
   if (character.mana > spell.manacost) {
-    return (damageRoll(fireBall(mage).min, fireBall(mage).max, 'Mage'));
+    return (damageRoll(spell.min, spell.max, 'Mage'));
   } else {
     return 'Não possui mana suficiente';
   }
@@ -84,22 +84,3 @@ const mageTurn = (action, mana) => {
 }
 
 console.log(mageTurn(spellDamage(mage, fireBall(mage)), manaUsage(mage, fireBall(mage))))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
