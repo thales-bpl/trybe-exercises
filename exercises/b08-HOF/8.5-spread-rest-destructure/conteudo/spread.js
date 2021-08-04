@@ -1,8 +1,8 @@
 // ----- SPREAD ----- //
-/* Spread syntax (...) allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected. */
+// Spread syntax (...) allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
 
-// When we invoke the function, we pass it all the values in the array using the spread syntax and the array name
 // Syntax: ...exampleArray
+// When we invoke the function, we pass it all the values in the array using the spread syntax and the array name
 
 // Example1:
 function sum(x, y, z) {
@@ -13,13 +13,13 @@ const numbers = [1, 2, 3];
 
 console.log(sum(...numbers)); // output: 6
 
-// Example 2:
+// Example2:
 let numberStore = [0, 1, 2];
 let newNumber = 12;
 numberStore = [...numberStore, newNumber];
 console.log(numberStore);
 
-// Example 3:
+// Example3:
 const spring = ['OUT', 'NOV', 'DEZ'];
 const summer = ['JAN', 'FEV', 'MAR'];
 const fall = ['ABR', 'MAI', 'JUN'];
@@ -34,20 +34,20 @@ console.log(months); /* [
 ] */
 
 // A good use of spread is as an argument of a function that has multiple parameters
-// Example 4:
+// Example4:
 const imc = (peso, altura) => (peso / (altura * altura)).toFixed(2);
 const patientInfo = [60, 1.7];
 
 console.log(imc(...patientInfo)); // output: 20.76
 
-// Example 5:
+// Example5:
 const imc = (peso, altura) => (peso / (altura * altura)).toFixed(2);
 const patientInfo = [60, 1.7];
 
 console.log(imc(...patientInfo)); // 20.76
 
 // spread can also be used to manipulate objects
-// Example 6:
+// Example6:
 const people = {
   id: 101,
   name: 'Alysson',
