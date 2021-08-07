@@ -1,5 +1,5 @@
 // ----- Array Destructuring ----- //
-// Podemos desetruturar arrays da mesma forma que objetos
+// Podemos desestruturar arrays da mesma forma que objetos
 
 // Sem array destructuring:
 const arrayCountries = ['Brazil', 'Japan', 'China', 'Canada'];
@@ -15,7 +15,6 @@ console.log(thirdCountry); // China
 console.log(fourthCountry); // Canada
 
 // Com array destructuring:
-
 const arrayCountries = ['Brazil', 'Japan', 'China', 'Canada'];
 const [firstCountry, secondCountry, thirdCountry, fourthCountry] = arrayCountries;
 // Estamos atribuindo uma key a cada objeto do array

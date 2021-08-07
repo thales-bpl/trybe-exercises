@@ -1,4 +1,4 @@
-// EVERY //
+// -- EVERY -- //
 // Retorna true se todos os valores do vetor cumprirem a condição
 // Retorna false se algum valor do array não cumprir a condição
 
@@ -8,7 +8,6 @@ const moreAges = [23, 32, 34]
 ages.every ((valor, index, array) => {
 
 });
-
 
 const todasAsPessoasMaioresDeIdade = ages.every((valor) => {
   return valor >= 18;

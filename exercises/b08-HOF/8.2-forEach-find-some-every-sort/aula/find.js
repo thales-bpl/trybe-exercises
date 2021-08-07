@@ -1,3 +1,7 @@
+// -- FIND -- //
+// Encontra o primeiro elemento em um array que cumpre uma condição
+// Deve retornar true ou false 
+
 const users = [
   {firstName: 'Homer', lastName: 'Simpson', isDriver: true },
   {firstName: 'Marge', lastName: 'Simpson', isDriver: true },
@@ -5,14 +9,9 @@ const users = [
   {firstName: 'Lisa', lastName: 'Simpson', isDriver: false },
   {firstName: 'Maggie', lastName: 'Simpson', isDriver: false },
 ];
-
-// -- FIND -- //
-// Encontra o primeiro elemento em um array que cumpre uma condição
-// Deve retornar true ou false 
-
 /* users.find((valor, indice, array) => {
   // return true / false 
-
+  
 });  */
 
 const firstnotDriver = users.find((user) => user.isDriver);

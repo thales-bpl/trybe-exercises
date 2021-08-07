@@ -81,8 +81,8 @@ console.log(firstMultipleOf5);
 
 
 const arrayOfValues = ['josé', 50, 0.25, { comida: 'Chocolate' }];
-arrayOfValues.forEach((element, blabla, theEntireArray) => {
+arrayOfValues.forEach((element, index, theEntireArray) => {
   console.log('Cada elemento do array:', element);
-  console.log('Index, posição do elemento:', blabla);
+  console.log('Index, posição do elemento:', index);
   console.log('Array percorrido:', theEntireArray);
 });
