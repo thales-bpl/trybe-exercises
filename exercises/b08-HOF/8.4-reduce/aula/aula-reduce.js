@@ -1,4 +1,4 @@
-const arrayN = [1,2,-2,3,4,5,6,-6,0]
+const arrayN = [1,2,-2,3,4,5,6,-6,0,1,2,3]
 
 console.table(arrayN);
 
