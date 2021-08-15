@@ -1,5 +1,5 @@
 // Ternary Operator
-// Syntax: 'x ? y: z'
+// Syntax: 'x ? y : z'
 // 'binary statement' ? 'return if true' : 'return if false'
 // x = statement that will be checked if true or false. This statement has to be binary (outputs a boolean)
 // y = operator return if the statement is true
