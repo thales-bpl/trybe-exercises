@@ -3,7 +3,7 @@ const dividerArray = [2, 3, 5, 10];
 const promise = new Promise((resolve, reject) => {
   let randomArray = [];
   for(let index = 0; index < 10; index += 1) {
-    randomArray.push(Math.floor(Math.random()*51));
+    randomArray.push(Math.floor(Math.random() * 50) + 1);
   }
   
   summedValuesOfScaledArray = randomArray
@@ -15,8 +15,9 @@ const promise = new Promise((resolve, reject) => {
     : reject (summedValuesOfScaledArray)
 })
 .then((arraySum) => dividerArray.map((value) => arraySum / value))
-.then((result) => console.log(result))
-.catch(arraySum => console.log(`Promise rejeitada. A Soma foi: ${arraySum}`))
+.then((dividedArray) => dividedArray.reduce((acc, cur) => acc + cur))
+.then(result => console.log(result))
+.catch(arraySum => console.log(`É mais de oito mil! Essa promise deve estar quebrada!(${arraySum})`))
 
 
 
