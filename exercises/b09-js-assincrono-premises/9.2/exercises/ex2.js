@@ -1,3 +1,5 @@
+const dividerArray = [2, 3, 5, 10];
+
 const promise = new Promise((resolve, reject) => {
   let randomArray = [];
   for(let index = 0; index < 10; index += 1) {
@@ -12,6 +14,10 @@ const promise = new Promise((resolve, reject) => {
     ? resolve (summedValuesOfScaledArray)
     : reject (summedValuesOfScaledArray)
 })
-.then(arraySum => console.log(`Promise resolvida. A Soma foi: ${arraySum}`))
+.then((arraySum) => dividerArray.map((value) => arraySum / value))
+.then((result) => console.log(result))
 .catch(arraySum => console.log(`Promise rejeitada. A Soma foi: ${arraySum}`))
+
+
+
 
