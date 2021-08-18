@@ -19,6 +19,3 @@ function countAnimals(specie) {
 }
 
 console.log(countAnimals());
-
-
-

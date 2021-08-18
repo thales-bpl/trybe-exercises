@@ -43,11 +43,7 @@ const customer = {
   job: 'Teacher',
 };
 
-function objectInsert (object, newKey, value) {
-  object.newKey = value
-}
+const objectInsert = (object, newKey, value) => object[newKey] = value;
 
 objectInsert (customer, 'album', 'The Rise and Fall of Ziggy Stardust and the Spiders from Mars');
 console.log(customer);
-
-// Usar Literals e Arrow pra fazer uma função mais bonitinha depois
