@@ -11,7 +11,7 @@ const cities = [
   {state: 'SP', name: 'São José dos Campos', region:'SE'},
   {state: 'MG', name: 'Lavras', region:'SE'},
   {state: 'TO', name: 'Campos Lindos', region:'N'}
-
+];
 
 console.log('As cidades do estado de Tocantins são:')
 
