@@ -2,7 +2,7 @@
 // 2 --> o que deve ser feito quando o evetno ocorrer (function)
 
 
-window.onload = funcaoMagica() {
+window.onload = funcaoMagica() ;{
     let button = document.getElementById('start-race-btn');
 
     let car1 = document.querySelector('.car1');
